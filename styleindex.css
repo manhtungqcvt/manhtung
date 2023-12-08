@@ -1,0 +1,31 @@
+h1{
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    text-align: center;
+    text-shadow: -5px 5px 5px g; 
+}
+
+h3{
+    text-align: center;
+}
+
+#texts{
+    font-size: x-large;
+    border-style: double;
+    border-width: 30px;
+    border-color: blue;
+    border-radius: 100px;
+    background-color: aqua;
+    text-align: center;
+}
+
+header{
+    text-align: center;
+}
+
+#anhny{
+    justify-content: center;
+    width: 30%;
+    margin: auto;
+}
+
+
