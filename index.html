@@ -20,21 +20,139 @@
     <video src="mp4/Just The Two Of Us.mp4" controls width="500"></video>
     <hr><br>
     <br><br><br>
-  <p>This is a normal text</p>
-  <p>This is a <b>bold</b> text</p>
-  <p>This is a <i>italic</i> text</p>
-  <p>This is a <u>underlined</u> text</p>
-  <p>This is a <del>deleted</del> text</p>
-  <p>This is a <big>BIG</big> text</p>
-  <p>This is a <small>small</small> text</p>
-  <p>This is a <sub>subscript</sub> text</p>
-  <p>This is a <sup>superscript</sup> text</p>
-  <p>This is a <tt>monospaced</tt> text</p>
-  <p>This is a <mark>marked</mark> text</p>
+    <p>This is a normal text</p>
+    <p>This is a <b>bold</b> text</p>
+    <p>This is a <i>italic</i> text</p>
+    <p>This is a <u>underlined</u> text</p>
+    <p>This is a <del>deleted</del> text</p>
+    <p>This is a <big>BIG</big> text</p>
+    <p>This is a <small>small</small> text</p>
+    <p>This is a <sub>subscript</sub> text</p>
+    <p>This is a <sup>superscript</sup> text</p>
+    <p>This is a <tt>monospaced</tt> text</p>
+    <p>This is a <mark>marked</mark> text</p>
 
 
-  <h1><span style="background-color: cyan;">This is a span title</span></h1>
-  <h1><div style="background-color: yellow;">This is a div title</div></h1>
+    <h1><span style="background-color: cyan;">This is a span title</span></h1>
+    <h1>
+        <div style="background-color: yellow;">This is a div title</div>
+    </h1>
+
+
+    <!-- Unordered List -->
+    <h3>Groceries</h3>
+    <ul>
+        <li>milk</li>
+        <li>eggs</li>
+        <li>bread</li>
+        <li>coffee supplies</li>
+        <ul>
+            <li>coffee beans</li>
+            <li>creamer</li>
+            <li>sugar</li>
+        </ul>
+    </ul>
+
+    <!-- Ordered List -->
+    <h3>To do list</h3>
+    <ol>
+        <li>eat breakfast</li>
+        <li>go to class</li>
+        <li>work</li>
+        <li><mark>STUDY</mark></li>
+    </ol>
+
+
+    <!-- Description List -->
+    <h3>Mythical creatures</h3>
+    <dl style="background-color:lightgreen; border:2px solid">
+
+        <dt>dragon</dt>
+        <dd>a mythical monster resembling a giant reptile, sometimes shown as having wings.</dd>
+
+        <dt>phoenix</dt>
+        <dd>an immortal bird associated with Greek mythology that cyclically regenerates or is otherwise born again.
+        </dd>
+
+        <dt>vampire</dt>
+        <dd>a mythical creature that subsists by feeding on the vital essence (generally in the form of blood) of the
+            living.</dd>
+
+        <dt>werewolf</dt>
+        <dd>an individual that can shapeshift into a wolf.</dd>
+    </dl>
+
+    <h3>Store Hours</h3>
+
+    <table border="1" style="background-color:black">
+        <tr align="center" style="background-color:lightblue">
+            <th width="100">Sunday</th>
+            <th width="100">Monday</th>
+            <th width="100">Tuesday</th>
+            <th width="100">Wednesday</th>
+            <th width="100">Thursday</th>
+            <th width="100">Friday</th>
+            <th width="100">Saturday</th>
+        </tr>
+        <tr align="center" style="background-color:aliceblue">
+            <td>Closed</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>10-2</td>
+        </tr>
+    </table>
+    <br><br><br>
+    <div style="display: flex; justify-content: center;"> <a href="https://www.google.com/" target="_blank"><button
+                style="font-size: 40px; border-radius: 20px; text-align: center; width: 100%; "> Cần hỏi gì thì ấn đây
+                là
+                có kết quả</button></a></div>
+
+    <form action="index.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required minlength="3" maxlength="10" placeholder="Type something"><br>
+
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter something"><br>
+
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email"><br>
+
+
+        <label for="phone">Phone number:</label>
+        <input type="tel" id="phone" placeholder="0xxxxxxxxxx" pattern="[0]{1}[0-9]{9}"><br>
+
+
+        <label for="bday">Birthday</label>
+        <input type="date" id="bday"><br>
+
+        <label for="choose">Choose:</label>
+        <input type="radio" name="call" id="Mr" value="Mr">
+        <label for="Mr">Mr.</label>
+        <input type="radio" name="call" id="Ms" value="Ms">
+        <label for="Ms">Ms.</label>
+        <input type="radio" name="call" id="Mrs" value="Mrs">
+        <label for="Mrs">Mrs.</label><br>
+
+        <label for="payment">Choose your payment:</label>
+        <select id="payment">
+            <option value="Visa">Visa</option>
+            <option value="Mastercard">Mastercard</option>
+            <option value="Banking">Banking</option>
+        </select><br>
+
+        <label for="checkbox">You must agree to continue</label>
+        <input type="checkbox" id="checkbox" required>I agree <br>
+
+
+        <input type="reset"><br>
+        <input type="submit">
+    </form>
+
 </body>
 
 </html>
