@@ -1,7 +1,7 @@
 h1{
     font-family:Georgia, 'Times New Roman', Times, serif ;
     text-align: center;
-    text-shadow: -5px 5px 5px g; 
+    text-shadow: -5px 5px 5px gray; 
 }
 
 h3{
@@ -22,10 +22,37 @@ header{
     text-align: center;
 }
 
-#anhny{
+#tabletime{
+    display: flex;
     justify-content: center;
-    width: 30%;
-    margin: auto;
+}
+
+#formtest{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 
+#formborder{
+    border-style: double   ;
+    padding: 15px;
+}
+
+#anhny{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#audio{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+#video{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
