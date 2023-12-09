@@ -20,7 +20,11 @@ h3 {
 
 header {
     text-align: center;
+    background-image: url(img/background.jpg);
+    background-size: cover;
 }
+
+
 
 #tabletime {
     display: flex;
@@ -59,6 +63,59 @@ header {
 
 #messenger{
     height: 100px;
-    position:fixed;
-    bottom: 0;
+    position:sticky;
+    top: 0;
+
+}
+
+#googlebutton:hover{
+    font-size: 1.1em;
+    color: crimson;
+    background-color: aquamarine;
+}
+
+#googlebutton:active{
+    font-size: 1.1em;
+    color: white;
+    background-color: blue;
+}
+
+.buttondiv{
+    display: flex;
+    justify-content: space-evenly;
+    border: 5px solid;
+    height: 300px;
+}
+
+.buttondiv button{
+    padding: 50px;
+    height: 100px;
+    width: 50px;
+    border-radius: 100%;
+}
+
+#buttonblack:hover{
+    padding: 55px;
+    border-radius: 100%;
+    background-color: black;
+    color: black;
+}
+
+#buttonwhite:hover{
+    padding: 55px;
+    border-radius: 100%;
+    background-color: white;
+    color: white;
+}
+
+.buttondiv img{
+    display: none;
+}
+
+.buttondiv:active img{
+    display:block ;
+}
+
+.buttondiv:active button{
+    display:none ;
 }
