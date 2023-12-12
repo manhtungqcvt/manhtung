@@ -72,6 +72,7 @@ header {
     font-size: 1.1em;
     color: crimson;
     background-color: aquamarine;
+    cursor: pointer;
 }
 
 #googlebutton:active{
@@ -84,8 +85,9 @@ header {
     display: flex;
     justify-content: space-evenly;
     border: 5px solid;
+    width: 20%;
     height: 300px;
-    margin-bottom: 20px;
+    margin: 20px 600px;
 }
 
 .buttondiv button{
@@ -143,4 +145,40 @@ header {
 
 .page a:hover:not(.active){
     background-color: gray;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#cometobottom{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+#cometobottom button{
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#cometobottom button:hover{
+    background-color: brown;
+}
+
+#cometotop{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+#cometotop button{
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#cometotop button:hover{
+    background-color: brown;
 }
